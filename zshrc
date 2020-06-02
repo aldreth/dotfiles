@@ -52,7 +52,7 @@ DEFAULT_USER=edwardandrewshodgson
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler docker-compose vagrant)
+plugins=(git rails bundler docker-compose docker)
 
 # User configuration
 
@@ -90,14 +90,14 @@ HELPDIR=/usr/local/share/zsh/help
 
 export PATH="/usr/local/bin:/Users/edwardandrewshodgson/.bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-# eval "$(rbenv init - --no-rehash zsh)"
+eval "$(rbenv init -)"
 
 # path for postgres.app
 # export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # gem editor
-export GEM_EDITOR="atom"
-export BUNDLER_EDITOR="atom"
+export GEM_EDITOR="code --wait"
+export BUNDLER_EDITOR="code --wait"
 
 
 # tiny care terminal
@@ -112,3 +112,10 @@ export TTC_UPDATE_INTERVAL=20
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# node
+export NODE_ENV="development"
+
+# cd'ing to frequently-used directories - https://thoughtbot.com/blog/cding-to-frequently-used-directories-in-zsh
+setopt auto_cd
+cdpath=($HOME $HOME/work $HOME/work/dashboards-and-visualisations/packages $HOME/work/dashboards-and-visualisations/workspaces $HOME/play)
