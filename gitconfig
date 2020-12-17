@@ -2,3 +2,5 @@
 	name = Edward Andrews-Hodgson
 	email = edward@aldreth.com
 	signingkey = 7F7A53ECE09BECF6
+[commit]
+	gpgsign = true
