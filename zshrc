@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/edwardandrewshodgson/.oh-my-zsh
+export ZSH=/home/edward/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -46,7 +46,7 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-DEFAULT_USER=edwardandrewshodgson
+DEFAULT_USER=edward
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -84,11 +84,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdw="cd ~/work"
 
-unalias run-help
-autoload run-help
-HELPDIR=/usr/local/share/zsh/help
+# unalias run-help
+# autoload run-help
+# HELPDIR=/usr/local/share/zsh/help
 
-export PATH="/usr/local/bin:/Users/edwardandrewshodgson/.bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/home/edward/.bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/edward/.rbenv/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 eval "$(rbenv init -)"
 
@@ -102,7 +102,7 @@ export BUNDLER_EDITOR="code --wait"
 
 # tiny care terminal
 export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
-export TTC_REPOS='/Users/edwardandrewshodgson/work,/Users/edwardandrewshodgson/play'
+export TTC_REPOS='/home/edward/work,/home/edward/play'
 export TTC_REPOS_DEPTH=2
 export TTC_WEATHER='York, United Kingdom'
 export TTC_CELSIUS=true
@@ -118,4 +118,5 @@ export NODE_ENV="development"
 
 # cd'ing to frequently-used directories - https://thoughtbot.com/blog/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd
-cdpath=($HOME $HOME/work $HOME/work/dashboards-and-visualisations/packages $HOME/work/dashboards-and-visualisations/workspaces $HOME/play)
+cdpath=($HOME $HOME/work $HOME/play)
+export GPG_TTY=$(tty)
