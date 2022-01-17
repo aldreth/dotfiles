@@ -52,7 +52,7 @@ DEFAULT_USER=edward
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler docker-compose docker)
+plugins=(git rails bundler docker-compose docker zsh-autosuggestions)
 
 # User configuration
 
@@ -88,7 +88,7 @@ alias cdw="cd ~/work"
 # autoload run-help
 # HELPDIR=/usr/local/share/zsh/help
 
-export PATH="/usr/local/bin:/home/edward/.bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/edward/.rbenv/bin"
+export PATH="/usr/local/bin:/home/edward/.bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/edward/.rbenv/bin:/home/edward/.cargo/env:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 eval "$(rbenv init -)"
 
