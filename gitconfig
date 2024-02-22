@@ -1,6 +1,12 @@
 [user]
 	name = Edward Andrews-Hodgson
 	email = edward@aldreth.com
-	signingkey = 7F7A53ECE09BECF6
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMa69UYewrKSYqODMbvpQ+AvqV+OobartHAxaU6s6yiI
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /opt/1Password/op-ssh-sign
+[init]
+	defaultBranch = main
