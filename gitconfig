@@ -2,11 +2,16 @@
 	name = Edward Andrews-Hodgson
 	email = edward@aldreth.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMa69UYewrKSYqODMbvpQ+AvqV+OobartHAxaU6s6yiI
-[commit]
-	gpgsign = true
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	program = /opt/1Password/op-ssh-sign
-[init]
-	defaultBranch = main
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true

@@ -113,7 +113,7 @@ DEFAULT_USER=edward
 
 # tiny care terminal
 export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
-export TTC_REPOS='/home/edward/work,/home/edward/play'
+export TTC_REPOS='/Users/edward/Developer/work,/Users/edward/Developer/play'
 export TTC_REPOS_DEPTH=2
 export TTC_WEATHER='York, United Kingdom'
 export TTC_CELSIUS=true
@@ -124,7 +124,7 @@ export NODE_ENV="development"
 
 # cd'ing to frequently-used directories - https://thoughtbot.com/blog/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd
-cdpath=($HOME $HOME/work $HOME/play)
+cdpath=($HOME $HOME/Developer/work $HOME/Developer/play)
 export GPG_TTY=$(tty)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
