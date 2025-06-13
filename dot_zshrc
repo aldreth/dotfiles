@@ -108,6 +108,9 @@ export EDITOR="code --wait"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Use eza for ls https://github.com/eza-community/eza
+alias ls='eza'
+
 DEFAULT_USER=edward
 
 # tiny care terminal
