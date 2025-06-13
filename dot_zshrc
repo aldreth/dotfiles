@@ -138,3 +138,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # atuin shell history - https://docs.atuin.sh
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
+
+# mise tool version manager
+eval "$(mise activate zsh)"
