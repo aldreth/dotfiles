@@ -1,0 +1,5 @@
+
+. "$HOME/.atuin/bin/env"
+. "$HOME/.cargo/env"
+
+export PATH="$HOME/.elan/bin:$PATH"
