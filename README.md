@@ -10,3 +10,17 @@ chezmoi init --apply git@github.com:aldreth/dotfiles.git
 ```
 
 Config is stored at `~/.config/chezmoi/chezmoi.toml`, but is managed with a [template in this repository](./.chezmoi.toml.tmpl).
+
+## Day to day tasks
+
+### Adding new files
+
+```sh
+chezmoi add ~/[DIRECTORY_NAME/FILE_NAME]
+```
+
+### Updating existing files
+
+```sh
+chezmoi edit --apply ~/[DIRECTORY_NAME/FILE_NAME]
+```
