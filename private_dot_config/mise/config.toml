@@ -2,4 +2,5 @@
 idiomatic_version_file_enable_tools = ["node", "ruby"]
 
 [tools]
+go = "1.25.4"
 node = "24"
