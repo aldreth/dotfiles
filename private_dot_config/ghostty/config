@@ -1,1 +1,4 @@
 theme = dark:Builtin Solarized Dark,light:Builtin Solarized Light
+
+keybind = super+arrow_left=previous_tab
+keybind = super+arrow_right=next_tab
