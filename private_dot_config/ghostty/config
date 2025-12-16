@@ -1,4 +1,7 @@
 theme = dark:Builtin Solarized Dark,light:Builtin Solarized Light
 
+font-family = Fira Code
+font-size = 13.5
+
 keybind = super+arrow_left=previous_tab
 keybind = super+arrow_right=next_tab
