@@ -1,7 +1,11 @@
 theme = dark:Builtin Solarized Dark,light:Builtin Solarized Light
 
-font-family = Fira Code
-font-size = 13.5
-
+# iterm style left and right tab change
 keybind = super+arrow_left=previous_tab
 keybind = super+arrow_right=next_tab
+
+# Fira Code with full ligatures
+font-family = Fira Code
+font-size = 13
+font-thicken = false
+font-feature = +calt,+liga,+dlig,+ss01,+ss02,+ss03,+ss04,+ss05
