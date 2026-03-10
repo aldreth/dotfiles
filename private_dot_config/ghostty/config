@@ -9,3 +9,6 @@ font-family = Fira Code
 font-size = 13
 font-thicken = false
 font-feature = +calt,+liga,+dlig,+ss01,+ss02,+ss03,+ss04,+ss05
+
+# automatically copy selected text to the clipboard
+copy-on-select = clipboard
