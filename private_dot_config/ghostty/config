@@ -1,4 +1,4 @@
-theme = dark:Builtin Solarized Dark,light:Builtin Solarized Light
+theme = dark:Selenized Dark,light:Selenized Light
 
 # iterm style left and right tab change
 keybind = super+arrow_left=previous_tab
