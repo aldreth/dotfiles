@@ -144,3 +144,5 @@ eval "$(mise activate zsh)"
 
 # add .zfunc to completions
 fpath+=~/.zfunc
+
+compinit
