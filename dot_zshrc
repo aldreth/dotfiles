@@ -141,3 +141,6 @@ eval "$(atuin init zsh)"
 
 # mise tool version manager
 eval "$(mise activate zsh)"
+
+# add .zfunc to completions
+fpath+=~/.zfunc
