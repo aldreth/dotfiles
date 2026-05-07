@@ -126,8 +126,8 @@ export PUSHOVER_ENCRYPTION_KEY='{{ onepasswordRead "op://Private/Pushover/encryp
 export PUSHOVER_USER='{{ onepasswordRead "op://Private/Pushover/user" }}'
 export PUSHOVER_TOKEN='{{ onepasswordRead "op://Private/Pushover/token" }}'
 
-# add pushover script to path
-PATH=$HOME/Developer/play/tools/pushover/pushover-notification:$PATH
+# add pushover script to PATH
+PATH="$HOME/Developer/play/tools/pushover:$PATH"
 
 # node
 export NODE_ENV="development"
