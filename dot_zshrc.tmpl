@@ -126,7 +126,8 @@ export PUSHOVER_ENCRYPTION_KEY='{{ onepasswordRead "op://Private/Pushover/encryp
 export PUSHOVER_USER='{{ onepasswordRead "op://Private/Pushover/user" }}'
 export PUSHOVER_TOKEN='{{ onepasswordRead "op://Private/Pushover/token" }}'
 
-export SUPER_TEST_KEY='EDWARDedwardadfsadfasd'
+# add pushover script to path
+PATH=$HOME/Developer/play/tools/pushover/pushover-notification:$PATH
 
 # node
 export NODE_ENV="development"
@@ -151,5 +152,8 @@ eval "$(mise activate zsh)"
 
 # add .zfunc to completions
 fpath+=~/.zfunc
+
+# finally export path
+export $PATH
 
 compinit
