@@ -207,3 +207,6 @@ records = true
 [dotfiles]
 # Already using chezmoi to manage dotfiles
 enabled = false
+
+[ai]
+enabled = true
